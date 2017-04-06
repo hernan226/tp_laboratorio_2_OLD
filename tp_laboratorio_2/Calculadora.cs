@@ -38,9 +38,6 @@ namespace tp_laboratorio_2
         /// <returns>Retorna "+" en caso de error. Retorna el operador si no hubo error.</returns>
         public string validarOperador(string operador)
         {
-            if (operador=="+")
-            return "+";
-
             if (operador=="-")
             return "-";
 
