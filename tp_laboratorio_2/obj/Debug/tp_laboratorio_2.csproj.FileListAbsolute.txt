@@ -1,0 +1,9 @@
+c:\users\herna\onedrive\documents\visual studio 2012\Projects\tp_laboratorio_2\tp_laboratorio_2\bin\Debug\tp_laboratorio_2.exe.config
+c:\users\herna\onedrive\documents\visual studio 2012\Projects\tp_laboratorio_2\tp_laboratorio_2\bin\Debug\tp_laboratorio_2.exe
+c:\users\herna\onedrive\documents\visual studio 2012\Projects\tp_laboratorio_2\tp_laboratorio_2\bin\Debug\tp_laboratorio_2.pdb
+c:\users\herna\onedrive\documents\visual studio 2012\Projects\tp_laboratorio_2\tp_laboratorio_2\obj\Debug\tp_laboratorio_2.csprojResolveAssemblyReference.cache
+c:\users\herna\onedrive\documents\visual studio 2012\Projects\tp_laboratorio_2\tp_laboratorio_2\obj\Debug\tp_laboratorio_2.Properties.Resources.resources
+c:\users\herna\onedrive\documents\visual studio 2012\Projects\tp_laboratorio_2\tp_laboratorio_2\obj\Debug\tp_laboratorio_2.csproj.GenerateResource.Cache
+c:\users\herna\onedrive\documents\visual studio 2012\Projects\tp_laboratorio_2\tp_laboratorio_2\obj\Debug\tp_laboratorio_2.exe
+c:\users\herna\onedrive\documents\visual studio 2012\Projects\tp_laboratorio_2\tp_laboratorio_2\obj\Debug\tp_laboratorio_2.pdb
+c:\users\herna\onedrive\documents\visual studio 2012\Projects\tp_laboratorio_2\tp_laboratorio_2\obj\Debug\tp_laboratorio_2.FrmPrincipal.resources
