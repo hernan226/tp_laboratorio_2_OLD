@@ -86,7 +86,7 @@ namespace EntidadesInstanciables
             try
             {
                 using (StreamWriter sw = new StreamWriter("Jornada.txt"))
-                    sw.WriteLine(jornada.Leer());
+                    sw.WriteLine(jornada.ToString());
 
                 return true;
             }
@@ -97,12 +97,31 @@ namespace EntidadesInstanciables
         }
 
         /// <summary>
-        /// Lee los datos de la jornada.
+        /// Lee los datos de la jornada y los guarda en un string.
         /// </summary>
-        /// <returns>Datos de la jornada.</returns>
-        public string Leer()
+        /// <returns>Datos de la jornada o arroja una excepcion en caso de
+        /// error en el archivo.</returns>
+        public static string Leer()
         {
-            return this.ToString();
+            StringBuilder sb = new StringBuilder();
+            try
+            {
+                using (StreamReader sr = new StreamReader("Jornada.txt"))
+                {
+                    string Recuperado;
+                    
+
+                    while ((Recuperado = sr.ReadLine()) != null)
+                    {
+                        sb.Append(Recuperado);
+                    }                    
+                }
+                return sb.ToString();
+            }
+            catch (Exception ex)
+            {
+                throw new ArchivosException(ex);
+            }
         }
         #endregion
 

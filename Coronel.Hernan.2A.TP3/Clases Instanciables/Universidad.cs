@@ -89,7 +89,7 @@ namespace EntidadesInstanciables
             StringBuilder sb = new StringBuilder();
             sb.AppendLine("Jornada:");
             foreach (Jornada item in this._jornada)
-                sb.AppendLine(item.Leer());
+                sb.AppendLine(item.ToString());
 
             return sb.ToString();
         }
@@ -174,7 +174,7 @@ namespace EntidadesInstanciables
                 if (item==clase)
                     return item;
             }
-            throw new SinProfesorException("No hay profesor para la clase.");
+            throw new SinProfesorException();
         }
 
         /// <summary>
@@ -191,7 +191,7 @@ namespace EntidadesInstanciables
                 if (item != clase)
                     return item;
             }
-            throw new SinProfesorException("No hay profesor que no de la clase.");
+            throw new SinProfesorException();
            
         }
         /// <summary>
@@ -236,7 +236,7 @@ namespace EntidadesInstanciables
                 return g;
             }
             else     
-                throw new AlumnoRepetidoException("Alumno repetido.");                
+                throw new AlumnoRepetidoException();                
         }
         /// <summary>
         /// Agrega una clase junto con un profesor que puede dar la clase

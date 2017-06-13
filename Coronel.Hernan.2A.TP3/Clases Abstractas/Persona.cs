@@ -180,7 +180,7 @@ namespace EntidadesAbstractas
                 if (dato < 89999999)
                     return dato;
                 else
-                    throw new NacionalidadInvalidaException("La nacionalidad no se condice con el numero de DNI.");
+                    throw new DniInvalidoException("La nacionalidad no se condice con el numero de DNI.");
             }
             else if (dato > 89999999)
                 return dato;
@@ -203,7 +203,7 @@ namespace EntidadesAbstractas
                 if (dni > 0)
                     return this.ValidarDni(nacionalidad, dni);
 
-            throw new DniInvalidoException("El DNI no es un numero valido.");
+            throw new DniInvalidoException();
         }
         #endregion
 

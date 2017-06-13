@@ -1,4 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Excepciones
 {
@@ -8,7 +12,6 @@ namespace Excepciones
     /// </summary>
     public class ArchivosException:Exception
     {
-        public ArchivosException(Exception innerException)
-            : base(innerException.Message, innerException) { }     
+        public ArchivosException(Exception innerException): base(innerException.InnerException.Message) { }     
     }
 }
