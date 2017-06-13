@@ -162,7 +162,7 @@ namespace EntidadesInstanciables
             foreach (Alumno item in this._alumnos)
                 sb.AppendLine(item.ToString());
 
-            sb.Append("<------------------------------------------------>");
+            sb.AppendLine("<------------------------------------------------>");
 
             return sb.ToString();
         }
