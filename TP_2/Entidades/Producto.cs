@@ -41,9 +41,9 @@ namespace Entidades_2017
         {
             StringBuilder sb = new StringBuilder();
 
-            sb.AppendLine("CODIGO DE BARRAS: "+ this._codigoDeBarras + "\r\n");
-            sb.AppendLine("MARCA          : " + this._marca.ToString() + "\r\n");
-            sb.AppendLine("COLOR EMPAQUE  : " + this._colorPrimarioEmpaque.ToString() + "\r\n");
+            sb.AppendLine("CODIGO DE BARRAS: "+ this._codigoDeBarras + "\r");
+            sb.AppendLine("MARCA          : " + this._marca.ToString() + "\r");
+            sb.AppendLine("COLOR EMPAQUE  : " + this._colorPrimarioEmpaque.ToString() + "\r");
             sb.AppendLine("---------------------");
 
             return sb.ToString();

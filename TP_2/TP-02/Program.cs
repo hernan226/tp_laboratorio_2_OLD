@@ -21,7 +21,7 @@ namespace TP_02
             Snacks a2 = new Snacks(Producto.EMarca.Arcor, "TYU426", ConsoleColor.DarkBlue);
             Snacks a3 = new Snacks(Producto.EMarca.Sancor, "IOP852", ConsoleColor.Green);
 
-            // Agrego 6 ítems (los últimos 2 no deberían poder agregarse) y muestro
+            // Agrego 7 ítems (los últimos 2 no deberían poder agregarse) y muestro
             changoDeCompras += c1;
             changoDeCompras += c2;
             changoDeCompras += m1;

@@ -30,7 +30,6 @@ namespace Entidades_2017
             sb.AppendLine("DULCE");
             sb.AppendLine(base.ToString());
             sb.AppendLine("CALORIAS : "+ this.CantidadCalorias);
-            sb.AppendLine("");
             sb.AppendLine("---------------------");
 
             return sb.ToString();

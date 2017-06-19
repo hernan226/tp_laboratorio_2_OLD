@@ -61,12 +61,15 @@ namespace Entidades_2017
                 switch (tipo)
                 {
                     case ETipo.Snacks:
+                        if(v is Snacks)
                         sb.AppendLine(v.Mostrar());
                         break;
                     case ETipo.Dulce:
+                        if(v is Dulce)
                         sb.AppendLine(v.Mostrar());
                         break;
                     case ETipo.Leche:
+                        if (v is Leche)
                         sb.AppendLine(v.Mostrar());
                         break;
                     default:
@@ -81,24 +84,27 @@ namespace Entidades_2017
 
         #region "Operadores"
         /// <summary>
-        /// Agregará un elemento a la lista
+        /// Agregará un elemento a la lista si este no esta en ella
+        /// y no supera su capacidad. 
         /// </summary>
         /// <param name="c">Objeto donde se agregará el elemento</param>
         /// <param name="p">Objeto a agregar</param>
         /// <returns></returns>
         public static Changuito operator +(Changuito c, Producto p)
         {
-            foreach (Producto v in c._productos)
-            {
-                if (v == p)
-                    return c;
+            if (c._productos.Count!=c._espacioDisponible)
+            {                
+                foreach (Producto v in c._productos)
+                {
+                    if (v == p)
+                        return c;
+                }
+                c._productos.Add(p);
             }
-
-            c._productos.Add(p);
             return c;
         }
         /// <summary>
-        /// Quitará un elemento de la lista
+        /// Quitará un elemento de la lista si este esta en ella.
         /// </summary>
         /// <param name="c">Objeto donde se quitará el elemento</param>
         /// <param name="p">Objeto a quitar</param>
@@ -109,6 +115,7 @@ namespace Entidades_2017
             {
                 if (v == p)
                 {
+                    c._productos.Remove(v);
                     break;
                 }
             }
